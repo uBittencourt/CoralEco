@@ -73,6 +73,34 @@
         </div> <!-- FECHANDO INTERFACE -->
     </section> <!-- FECHANDO SEÇÃO PROBLEMA -->
 
+    <section id="tecnologias">
+        <div class="imagem-modal" id="modal-arduino">
+            <img src="./src/assets/projeto_arduino.png" alt="projeto arduino">
+            <button onclick="closeModalArduino()"><i class="bi bi-x-lg"></i></button>
+        </div> <!-- FECHANDO MODAL ARDUINO -->
+        <div class="tecnologia img-left">
+            <img src="./src/assets/imagem_tecnologia.jpg" alt="termômetro no mar">
+            <div id="texto-right" class="texto-tecnologia">
+                <h2>Monitoramento de temperatura</h2>
+                <p>Com um sistema arduino, haverá o cálculo da temperatura próxima aos recifes para evitar possíveis mudanças</p>
+                <button onclick="openModalArduino()">Saiba mais</button>
+            </div> <!-- FECHANDO TEXTO RIGHT -->
+        </div> <!-- FECHANDO PRIMEIRA PARTE DE TECNOLOGIAS -->
+
+        <div class="imagem-modal" id="modal-python">
+            <img src="./src/assets/projeto_python.png" alt="arquivo python com execução no cmd">
+            <button onclick="closeModalPython()"><i class="bi bi-x-lg"></i></button>
+        </div> <!-- FECHANDO MODAL PYTHON -->
+        <div class="tecnologia img-right">
+            <div id="texto-left" class="texto-tecnologia">
+                <h2>Automação de Informações</h2>
+                <p>Código fonte em python, com apresentação dos recifes de corais e sua importância</p>
+                <button onclick="openModalPython()">Saiba mais</button>
+            </div> <!-- FECHANDO TEXTO LEFT -->
+            <img src="./src/assets/imagem_tecnologia2.jpg" alt="computador próximo a recifes do mar">
+        </div> <!-- FECHANDO SEGUNDA PARTE DE TECNOLOGIAS -->
+    </section> <!-- FECHANDO SEÇÃO TECNOLOGIAS -->
+
     <script src="./src/js/script.js"></script>
 </body>
 </html>
