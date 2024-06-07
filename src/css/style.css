@@ -460,3 +460,78 @@ html {
 #slide3:checked ~ .s1{
     margin-left: -66.66%;
 }
+
+
+/* ESTILIZANDO SEÇÃO DO PÚBLICO */
+#impacto{
+    height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+    background-color: var(--azul-medio);
+    position: relative;
+    text-align: center;
+}
+
+#impacto .interface{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.card-impacto{
+    height: 85vh;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2px;
+    transition: 0.4s ease-in-out;
+    z-index: 998;
+}
+
+.card-impacto:hover{
+    z-index: 999;
+    transform: scale(1.06);
+}
+
+.img-impacto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 70%;
+    width: 100%;
+}
+
+.img-impacto img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-impacto h2{
+    position: absolute;
+    padding-top: 6%;
+    font-size: 30px;
+}
+
+.text-impacto{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-impacto p{
+    padding: 40px 20px;
+    color: var(--azul-medio);
+    text-align: center;
+    font-weight: 600;
+}
