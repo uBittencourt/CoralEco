@@ -308,3 +308,44 @@ html {
 .texto-tecnologia button:hover::after{
     width: 100%;
 }
+
+
+/* ESTILIZAÇÃO DA SEÇÃO OBJETIVOS */
+#objetivos{
+    background-color: var(--azul-medio);
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#objetivos h2{
+    text-align: center;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#objetivos p{
+    font-size: 15px;
+}
+
+#objetivos ul{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#objetivos ul li{
+    display: flex;
+    width: 33%;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+#objetivos i{
+    font-size: 55px;
+}
