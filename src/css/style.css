@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+:root{
+    --azul-claro: #124467;
+    --azul-medio: #0B1C25;
+    --azul-escuro: #08151b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.interface{
+    max-width: 1100px;
+    margin: 0 auto;
+}
