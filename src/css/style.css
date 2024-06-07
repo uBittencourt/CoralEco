@@ -535,3 +535,39 @@ html {
     text-align: center;
     font-weight: 600;
 }
+
+
+/* ESTILIZANDO FOOTER */
+footer{
+    background-color: var(--azul-escuro);
+    padding: 15px;
+}
+
+footer .interface{ 
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    width: 60px;
+    height: 60px;
+}
+
+#icones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#icones i{
+    font-size: 1.5em;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#icones i:hover{
+    color: #C3C3C3;
+}
