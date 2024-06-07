@@ -349,3 +349,114 @@ html {
 #objetivos i{
     font-size: 55px;
 }
+
+
+/* ESTILIZANDO SEÇÃO BENEFÍCIOS */
+#beneficios{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--azul-medio);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#beneficios h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#beneficios input{
+    display: none;
+}
+
+#beneficios .interface{
+    height: 80vh;
+    width: 75vw;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 25px 15px var(--azul-escuro);
+}
+
+#slides{
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.img-beneficios{
+    position: relative;
+    width: 33.33%;
+    transition: 0.6s ease;
+    display: flex;
+    justify-content: end;
+}
+
+.img-beneficios h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.img-beneficios p{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.texto-beneficio{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: end;
+    padding-right: 30px;
+}
+
+.img-beneficios img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#nav-slide{
+    margin-top: 10px;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-slide label{
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#nav-slide label:hover{
+    background-color: white;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -33.33%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -66.66%;
+}
