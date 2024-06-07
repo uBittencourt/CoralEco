@@ -573,6 +573,33 @@ footer img{
 }
 
 
+
+/* ESTILIZANDO SEÇÃO DE MUDANÇA */
+#mudancas{
+    background-color: var(--azul-medio);
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mudancas .interface{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#texto-mudanca{
+    width: 70%;
+    text-align: center;
+}
+
+#texto-mudanca p{
+    font-size: 18px;
+}
+
 /* COMANDOS REFERENTES AO MENU HAMBUERGUER */
 .menu-mobile{
     background-color: #ffffff;
@@ -731,5 +758,9 @@ footer img{
 
     .card-impacto{
         width: 80%;
+    }
+
+    #mudancas{
+        height: 70vh;
     }
 }
