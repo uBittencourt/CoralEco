@@ -22,3 +22,119 @@ html {
     max-width: 1100px;
     margin: 0 auto;
 }
+
+
+/* ESTILIZANDO SEÇÃO INICIAL DE PROBLEMAS */
+#problema {
+    height: 100vh;
+    width: 100%;
+}
+
+#problema .interface{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 67vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fundo{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+#problema #menu-desktop{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#problema #menu-desktop ul{   
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#problema #menu-desktop ul li img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#problema #menu-desktop ul li a{
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+#problema #menu-desktop ul li a::after{
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#problema #menu-desktop ul li a:hover::after{
+    width: 100%;
+}
+
+#informacoes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+}
+
+#informacoes h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+#informacoes p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#informacoes button{
+    width: 40%;
+    height: 40px;
+    margin-top: 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+#informacoes button:hover{
+    color: transparent;
+    background-color: white;
+    color: #124467;
+    transform: scale(1.08);
+}
+
+#problema::after{
+    content: " ";
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, #0B1C25 5%, transparent);
+}
