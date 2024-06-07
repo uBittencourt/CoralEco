@@ -138,3 +138,173 @@ html {
     bottom: 0;
     background-image: linear-gradient(to top, #0B1C25 5%, transparent);
 }
+
+
+/* ESTILIZANDO SEÇÃO DE TECNOLOGIAS */
+#tecnologias{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--azul-medio);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tecnologia{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#modal-arduino{    
+    display: none;
+}
+
+#modal-python{    
+    display: none;
+}
+
+.imagem-modal{
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.imagem-modal img{
+    width: 50vw;
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px 20px black;
+}
+
+.imagem-modal button{
+    position: absolute;
+    width: 50px;
+    right: 5%;
+    top: 5%;
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.imagem-modal i{
+    color: black;
+}
+
+.tecnologia img{
+    width: 38%;
+    height: 270px;
+    transition: 0.8s all;
+    border-radius: 2px;
+}
+
+.tecnologia img:hover{
+    box-shadow: 1px 1px 30px 20px var(--azul-escuro);
+    cursor: pointer;
+}
+
+.img-left img{
+    margin-left: 9%;
+}
+
+.img-right img{
+    margin-right: 9%;
+}
+
+#texto-right{
+    margin-right: 11%;
+    align-items: flex-end;
+    position: relative;
+    text-align: right;
+}
+
+#texto-right::after{
+    content: " ";
+    width: 40%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    right: -25%;
+    transform: rotate(90deg);
+    z-index: 998;
+}
+
+#texto-left{   
+    margin-left: 11%;
+    align-items: flex-start;
+    position: relative;
+}
+
+#texto-left::after{
+    content: " ";
+    width: 40%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: -25%;
+    transform: rotate(90deg);
+}
+
+.texto-tecnologia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 270px;
+    width: 40%;
+}
+
+.texto-tecnologia h2{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.texto-tecnologia p{
+    font-size: 18px;
+}
+
+.texto-tecnologia button{
+    margin-top: 20px;
+    padding-bottom: 4px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    width: 19%;
+}
+
+#texto-right button{
+    text-align: end;
+}
+
+#texto-right button::after{
+    right: 0;
+}
+
+#texto-left button{
+    text-align: start;
+}
+
+#texto-left button::after{
+    left: 0;
+}
+
+.texto-tecnologia button::after{
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.texto-tecnologia button:hover::after{
+    width: 100%;
+}
