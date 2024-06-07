@@ -667,6 +667,16 @@ footer img{
     display: none;
 }
 
+.btn-abrir-menu ul{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-abrir-menu ul li{
+    font-size: 20px;
+    font-weight: 500;
+}
+
 
 /* RESPONSIVIDADE PARA CELULAR */
 @media screen and (max-width: 1200px){
@@ -682,7 +692,10 @@ footer img{
     .btn-abrir-menu {
         font-size: 40px;
         cursor: pointer;
-        display: block;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
     }
     #informacoes{
         text-align: center;
